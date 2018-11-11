@@ -1,0 +1,24 @@
+{
+    "name": "apollo-cli",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile": "babel src -d dist",
+        "watch": "npm run compile -- --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "apollo-cli": "./bin/www"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-env": "^2.4.1"
+    },
+    "dependencies": {
+        "commander": "^2.19.0"
+    }
+}
