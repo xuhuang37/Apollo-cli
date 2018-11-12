@@ -2,8 +2,12 @@ import program from 'commander'
 import { VERSION } from './utils/constants'
 import main from './apply'
 
-// apollo-cli config set a 1
-// apollo-cli install
+/*
+ 1.actionMap
+ 2.apollo-cli config set a 1
+ 3.apollo-cli install
+ 4.*
+*/
 
 let actionMap = {
     install: {
@@ -25,7 +29,7 @@ let actionMap = {
         ]
     },
     '*': {
-        description: 'can not find cmd key word like this',
+        description: 'Can not find any cmd key words like this~',
         examples: []
     }
 }

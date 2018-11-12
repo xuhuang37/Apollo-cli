@@ -1,10 +1,11 @@
-/*
-1.ApplyBus
-2.After
- */
+import { betterRequire } from './utils/common'
+import { resolve } from 'path'
 
-let apply = (action, args) => {
-    console.log(action, ...args)
+//ApplyBus
+let apply = (action, ...args) => {
+    let absPath = resolve(__dirname, `./${action}`)
+    console.log(absPath)
+    betterRequire(absPath)(...args)
 }
 
 export default apply

@@ -12,8 +12,12 @@ var _apply2 = _interopRequireDefault(_apply);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// apollo-cli config set a 1
-// apollo-cli install
+/*
+ 1.actionMap
+ 2.apollo-cli config set a 1
+ 3.apollo-cli install
+ 4.*
+*/
 
 let actionMap = {
     install: {
@@ -28,7 +32,7 @@ let actionMap = {
         examples: ['apollo-cli config set <k> <v>', 'apollo-cli config get <k>', 'apollo-cli config remove <k>']
     },
     '*': {
-        description: 'can not find cmd key word like this',
+        description: 'Can not find any cmd key words like this~',
         examples: []
     }
 };
